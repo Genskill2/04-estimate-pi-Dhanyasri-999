@@ -84,3 +84,22 @@ calculating the distance between the point and `(0,0)`.
 
 You can run `make test_mc` and `make test_wallis` to check if your
 implementations are correct before you push the code.
+
+#include<stdio.h>
+#include<math.h>
+main()
+{
+    float o,l, n,i;
+    float p=1;
+    scanf("%f",&n);
+    for(i=1;i<=n;i++)
+    {
+        o= 4*pow(i,2);
+        l= (o)/(o-1);
+        p = p*l;
+        
+    }
+    printf("%f",p);
+    
+    
+}
